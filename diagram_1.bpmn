@@ -3,11 +3,16 @@
   <bpmn:process id="Process_1i2go67" isExecutable="true">
     <bpmn:startEvent id="StartEvent_1">
       <bpmn:outgoing>SequenceFlow_06w63mt</bpmn:outgoing>
+      <bpmn:outgoing>SequenceFlow_03z9oqi</bpmn:outgoing>
     </bpmn:startEvent>
     <bpmn:endEvent id="EndEvent_0j198xg">
       <bpmn:incoming>SequenceFlow_06w63mt</bpmn:incoming>
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="SequenceFlow_06w63mt" sourceRef="StartEvent_1" targetRef="EndEvent_0j198xg" />
+    <bpmn:endEvent id="EndEvent_0bg6oji">
+      <bpmn:incoming>SequenceFlow_03z9oqi</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_03z9oqi" sourceRef="StartEvent_1" targetRef="EndEvent_0bg6oji" />
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1i2go67">
@@ -20,6 +25,13 @@
       <bpmndi:BPMNEdge id="SequenceFlow_06w63mt_di" bpmnElement="SequenceFlow_06w63mt">
         <di:waypoint x="215" y="99" />
         <di:waypoint x="318" y="99" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="EndEvent_0bg6oji_di" bpmnElement="EndEvent_0bg6oji">
+        <dc:Bounds x="179" y="197" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_03z9oqi_di" bpmnElement="SequenceFlow_03z9oqi">
+        <di:waypoint x="197" y="117" />
+        <di:waypoint x="197" y="197" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
