@@ -4,6 +4,7 @@
     <bpmn:startEvent id="StartEvent_1">
       <bpmn:outgoing>SequenceFlow_06w63mt</bpmn:outgoing>
       <bpmn:outgoing>SequenceFlow_03z9oqi</bpmn:outgoing>
+      <bpmn:outgoing>SequenceFlow_0m3oqhr</bpmn:outgoing>
     </bpmn:startEvent>
     <bpmn:endEvent id="EndEvent_0j198xg">
       <bpmn:incoming>SequenceFlow_06w63mt</bpmn:incoming>
@@ -13,25 +14,36 @@
       <bpmn:incoming>SequenceFlow_03z9oqi</bpmn:incoming>
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="SequenceFlow_03z9oqi" sourceRef="StartEvent_1" targetRef="EndEvent_0bg6oji" />
+    <bpmn:endEvent id="EndEvent_0cpjka6">
+      <bpmn:incoming>SequenceFlow_0m3oqhr</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_0m3oqhr" sourceRef="StartEvent_1" targetRef="EndEvent_0cpjka6" />
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1i2go67">
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
-        <dc:Bounds x="179" y="81" width="36" height="36" />
+        <dc:Bounds x="309" y="81" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="EndEvent_0j198xg_di" bpmnElement="EndEvent_0j198xg">
-        <dc:Bounds x="318" y="81" width="36" height="36" />
+        <dc:Bounds x="448" y="81" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="SequenceFlow_06w63mt_di" bpmnElement="SequenceFlow_06w63mt">
-        <di:waypoint x="215" y="99" />
-        <di:waypoint x="318" y="99" />
+        <di:waypoint x="345" y="99" />
+        <di:waypoint x="448" y="99" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="EndEvent_0bg6oji_di" bpmnElement="EndEvent_0bg6oji">
-        <dc:Bounds x="179" y="197" width="36" height="36" />
+        <dc:Bounds x="309" y="197" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="SequenceFlow_03z9oqi_di" bpmnElement="SequenceFlow_03z9oqi">
-        <di:waypoint x="197" y="117" />
-        <di:waypoint x="197" y="197" />
+        <di:waypoint x="327" y="117" />
+        <di:waypoint x="327" y="197" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="EndEvent_0cpjka6_di" bpmnElement="EndEvent_0cpjka6">
+        <dc:Bounds x="156" y="81" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0m3oqhr_di" bpmnElement="SequenceFlow_0m3oqhr">
+        <di:waypoint x="309" y="99" />
+        <di:waypoint x="192" y="99" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
